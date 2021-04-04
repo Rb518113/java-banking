@@ -16,7 +16,19 @@ public class JavaBanking {
      */
     public static void main(String[] args) {
         
-        System.out.println("Rifat Bhuiyan");
+        
+        
+        Banking rifat= new Banking(1,"Rifat");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
     
 }
