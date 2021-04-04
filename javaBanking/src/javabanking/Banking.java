@@ -37,6 +37,18 @@ public class Banking {
   }
   
   
+   public void sub(double money){
+       
+     if(balance>=money){
+     balance = balance - money;
+         System.out.println("Success!");
+     }
+     else{
+         System.out.println("Not Enough Blance!");
+     }
+     
+  }
+  
   
 
  
@@ -74,7 +86,17 @@ public class Banking {
        
        
        case "B": 
-           System.out.println("How much money to add On the account:");
+           System.out.println("How much money to add On the account: ");
+           add(kb.nextDouble());
+       break;
+       
+         case "C": 
+           System.out.println("How Much Money want to deduct: ");
+           sub(kb.nextDouble());
+       break;
+       
+         case "D": 
+           System.out.println("Account Transcription: ");
            add(kb.nextDouble());
        break;
        
@@ -86,7 +108,7 @@ public class Banking {
    }
     
    
-    }while(Option !="F");
+    }while(!Option.equals("F"));
        
     
     
